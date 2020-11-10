@@ -15,7 +15,7 @@
 /build
 
 # migrations
-/auth/migrations
+/authentication/migrations
 
 # misc
 .DS_Store
