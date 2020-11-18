@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { SiteContainer } from './styles/main/MainStyles';
+import { SiteContainer, Section } from './styles/main/MainStyles';
 import UserProvider from './context/UserContext';
 import NotificationProvider from './context/NotificationContext';
 
@@ -16,11 +16,11 @@ function App() {
       <UserProvider>
         <NotificationProvider>
 
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Section />}>
             <Navbar />
           </Suspense>
 
-          <Suspense fallback={<div>Loading...</div>}>
+          <Suspense fallback={<Section />}>
             <Notifications />
           </Suspense>
 
@@ -28,20 +28,20 @@ function App() {
             <Switch>
 
               <Route path="/register">
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<Section />}>
                   <Register />
                 </Suspense>
               </Route>
 
               <Route path="/login">
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<Section />}>
                   <Login />
                 </Suspense>
               </Route>
 
 
               <Route path="/" exact>
-                <Suspense fallback={<div>Loading...</div>}>
+                <Suspense fallback={<Section />}>
                   <Home />
                 </Suspense>
               </Route>
