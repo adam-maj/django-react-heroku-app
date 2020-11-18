@@ -47,7 +47,9 @@ function App() {
               </Route>
 
               <Route path="" exact>
-                <h1>404 URL Not Found</h1>
+                <Section>
+                  <Heading>404 Not Found</Heading>
+                </Section>
               </Route>
               
             </Switch>

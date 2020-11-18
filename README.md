@@ -1,6 +1,16 @@
 # django-react-heroku-app
 Boilerplate template for django-react app with heroku and heroku-postgres
 
+# Features
+1. Fully setup token authentication backend
+2. Configured login, logout, and register frontend views
+3. App wide notification system
+4. Custom styled component library
+5. Independent react side routing
+6. React lazy loading for large apps configured
+7. Backend configuration completely ready to go
+8. Production and development environments configured
+
 # Heroku/Git Setup & Deployment Instructions
 1. Create a new heroku app on the [heroku dashboard](https://dashboard.heroku.com)
 2. Add heroku domain to allowed hosts in settings.py line 13
