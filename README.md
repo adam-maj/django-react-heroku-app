@@ -1,5 +1,5 @@
 # django-react-heroku-app
-Boilerplate template for django-react app with heroku and heroku-postgres
+A better django-react-heroku-template with full instructions and fully setup auth, better url routing with react app, and dev configuration.
 
 # Features
 1. Fully setup token authentication backend
