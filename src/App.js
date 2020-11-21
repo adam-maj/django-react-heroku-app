@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import { SiteContainer, Section } from './styles/main/MainStyles';
+import { SiteContainer, Section, Heading } from './styles/main/MainStyles';
 import UserProvider from './context/UserContext';
 import NotificationProvider from './context/NotificationContext';
 

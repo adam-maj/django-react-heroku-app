@@ -1,19 +1,19 @@
 import styled, { css } from 'styled-components';
 
 const margin = css`
-  margin: ${props => props.m || '0px'};
-  margin-top: ${props => props.mt || '5px'};
-  margin-right: ${props => props.mr || '0px'};
-  margin-bottom: ${props => props.mb || '5px'};
-  margin-left: ${props => props.ml || '0px'};
+  margin-top: ${props => props.mt && props.mt};
+  margin-right: ${props => props.mr && props.mr};
+  margin-bottom: ${props => props.mb && props.mb};
+  margin-left: ${props => props.ml && props.ml};
+  margin: ${props => props.m && props.m};
 `
 
 const padding = css`
-  padding: ${props => props.p || '0px'};
-  padding-top: ${props => props.pt || '20px'};
-  padding-right: ${props => props.pr || '20px'};
-  padding-bottom: ${props => props.pb || '20px'};
-  padding-left: ${props => props.pl || '20px'};
+  padding-top: ${props => props.pt && props.pt};
+  padding-right: ${props => props.pr && props.pr};
+  padding-bottom: ${props => props.pb && props.pb};
+  padding-left: ${props => props.pl && props.pl};
+  padding: ${props => props.p && props.p};
 `
 
 export const Link = styled.a`

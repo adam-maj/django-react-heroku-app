@@ -6,7 +6,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Environment Variable Configuration
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', '+t@yz+%p_xub9#qzj8i+ntb#*_6a$2lxypal60xuf3fo9#m8gg')
 DEBUG = os.environ.get('DJANGO_DEBUG', 'True') != 'False'
-ALLOWED_HOSTS = ['DOMAINHERE.herokuapp.com', '127.0.0.1', 'localhost:8000']
+ALLOWED_HOSTS = ['DOMAINHERE.herokuapp.com', '127.0.0.1', 'localhost']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
