@@ -35,12 +35,12 @@ A better django-react-heroku-template with full instructions and fully setup aut
 2. Visit localhost:8000 to see your site
 3. This will autoreload if you make changes to backend code, but if you change frontend, you will have to exit with Ctrl+C and rerun "bash rundev.sh"
 
-# Setup routes
+# Setup Frontend Routes
 All routes not specified in backend/urls.py automatically lead to the react app, so you can configure routes with react router alone (no need to setup up urls in django router).
 1. Add a react route component to the App.js file with a "path" prop equal to the url path of the component.
 2. Place the component at that url route inside the path
 
-# Change App Name
+# Change Backend Name
 1. Change name of backend folder
 2. Change any instance of "backend" to your project name in the following areas (use CTRL or CMD + F to find):
     1. backend/asgi.py (Line 14)
