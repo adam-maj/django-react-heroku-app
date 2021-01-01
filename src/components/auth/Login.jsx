@@ -29,7 +29,7 @@ export default function Login() {
 
   return (
     <Section top>
-      <Flex fd="column" w="400px" mb="100px">
+      <Flex fd="column" w="400px" mb="100px" br="8px" p="20px">
         <Heading color="#222222">Sign In</Heading>
         <Label>Username:</Label>
         <Input

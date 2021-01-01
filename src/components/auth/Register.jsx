@@ -10,8 +10,8 @@ import * as api from '../../api/api';
 export default function Register() {
   const { setGlobalUsername } = useContext(UserContext);
   const { addNotification } = useContext(NotificationContext);
-  const [username, setUsername] = useState(username);
-  const [password, setPassword] = useState(password);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
   const history = useHistory();
 
   function register() {
@@ -29,7 +29,7 @@ export default function Register() {
 
   return (
     <Section top>
-      <Flex fd="column" w="400px" mb="100px">
+      <Flex fd="column" w="400px" p="20px" mb="100px" br="8px">
         <Heading color="#222222">Create Account</Heading>
         <Label>Username:</Label>
         <Input
